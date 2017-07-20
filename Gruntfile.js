@@ -22,6 +22,18 @@ module.exports = function(grunt) {
         src: '**.html',
         dest: 'target/',
       },
+      images: {
+        expand: true,
+        cwd: 'src/images',
+        src: '**',
+        dest: 'target/images',
+      },
+      bootstrap: {
+        expand: true,
+        cwd: 'plugins/bootstrap/css/',
+        src: 'bootstrap.min.css',
+        dest: 'target/css',
+      }
     },
     concat: {
       options: {
@@ -54,6 +66,7 @@ module.exports = function(grunt) {
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-sass');
+  // grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');

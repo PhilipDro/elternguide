@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAIA,IAAI,CACF,eAAe,CCHX,GAAG,CDKP,SAAI,CACF,MAAM,CAAE,KAAK",
-"sources": ["../../src/sass/main.sass","../../src/sass/variables.sass"],
+"mappings": "AAIA,IAAI,CACF,WAAW,CAAE,+BAAgC,CAC7C,UAAU,CAAE,MAAM,CAClB,WAAW,CAAE,GAAG,CAElB,MAAM,CACJ,UAAU,CAAE,uBAAuB,CACnC,eAAe,CAAE,KAAK",
+"sources": ["../../src/sass/main.sass"],
 "names": [],
 "file": "main.css"
 }
