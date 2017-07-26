@@ -22,8 +22,8 @@ header
   height: 90vh
 
 nav
-  text-align: center
-  padding: 4% 0
+  text-align: right
+  padding: 3% 0
   ul
     display: inline
     padding: 0
@@ -31,11 +31,17 @@ nav
       display: inline
       margin: 0 1%
       a
-        padding: 1% 2%
+        padding: 0.5% 2%
         color: $font-color-secondary
         background: $highlight-color-transparent
         cursor: pointer
         border-radius: $border-radius
+        font-weight: bold
+
+        &:hover
+          color: $font-color-secondary
+          background: darken($highlight-color-transparent, 10%)
+          text-decoration: none
 
 .header-text-box
   color: $highlight-color-darker
@@ -44,6 +50,9 @@ nav
     margin-bottom: 0
   p
     margin-top: 0
+  button
+    margin-left: 50%
+    transform: translateX(-50%)
 
 .lead
   font-size: $font-size-default * 1.3
@@ -56,8 +65,11 @@ nav
     display: inline-block
     color: $font-color-secondary
     padding: 2%
-    margin: 0 1%
+    margin: 2% 1%
     border-radius: $border-radius
+    cursor: pointer
+    &:hover
+      background: darken($highlight-color, 10%)
 
 button
   background: $highlight-color-transparent
