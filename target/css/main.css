@@ -1,2 +1,2 @@
-body{font-family:ff-tisa-sans-web-pro,sans-serif;font-style:normal;font-weight:400}header{background:url("../images/bg.jpg");background-size:cover}
+h1{font-size:2em}p{font-size:1em}body{font-family:ff-tisa-sans-web-pro,sans-serif;font-style:normal;font-weight:400}header{background:url("../images/bg.jpg");background-size:cover;height:90vh}nav{text-align:center;padding:4% 0}nav ul{display:inline;padding:0}nav ul li{display:inline;margin:0 1%}nav ul li a{padding:1% 2%;color:#fff;background:rgba(178,216,154,0.75);cursor:pointer}.header-text-box{color:#87A673;padding:3% 2%}.header-text-box h1{margin-bottom:0}.header-text-box p{margin-top:0}.lead{font-size:1.3em}
 /*# sourceMappingURL=main.css.map */

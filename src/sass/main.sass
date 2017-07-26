@@ -2,6 +2,12 @@
 
 @import 'variables'
 
+h1
+  font-size: $font-size-default * 2
+
+p
+  font-size: $font-size-default
+
 body
   font-family: ff-tisa-sans-web-pro, sans-serif
   font-style: normal
@@ -10,3 +16,30 @@ body
 header
   background: url('../images/bg.jpg')
   background-size: cover
+  height: 90vh
+
+nav
+  text-align: center
+  padding: 4% 0
+  ul
+    display: inline
+    padding: 0
+    li
+      display: inline
+      margin: 0 1%
+      a
+        padding: 1% 2%
+        color: $font-color-secondary
+        background: $highlight-color-transparent
+        cursor: pointer
+
+.header-text-box
+  color: $highlight-color-darker
+  padding: 3% 2%
+  h1
+    margin-bottom: 0
+  p
+    margin-top: 0
+
+.lead
+  font-size: $font-size-default * 1.3
