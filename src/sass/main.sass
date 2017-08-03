@@ -77,6 +77,35 @@ nav
     &:hover
       background: darken($highlight-color, 10%)
 
+.sub-problem-category
+.highlighted
+  color: $highlight-color
+.sub-problem
+  background: $light-grey
+  padding: 1%
+  h4
+    font-weight: bold
+    font-size: $font-size-lead
+    color: $highlight-color
+    margin-bottom: 0
+    &:after
+      content: ":"
+
+.exercise
+  padding: 1%
+  background: $light-grey
+  width: 28%
+  margin: 5% 2% 5% 0
+  display: inline-block
+  h4
+    font-weight: bold
+    font-size: $font-size-lead
+    color: $highlight-color
+    margin-bottom: 0
+
+.exercise-section
+  display: none
+
 button
   background: $highlight-color-transparent
   border: 0
@@ -88,5 +117,7 @@ button
 
 footer
   background: $background-color-secondary
+  height: 200px
+  position: relative
   nav
     text-align: left
