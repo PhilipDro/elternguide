@@ -19,15 +19,17 @@ body
   background-position: center
   height: 90vh
 .logo
-  max-width: 15%
+  max-width: 10%
   position: absolute
-  right: 0
+  right: 1%
+  top: 5%
 nav
   text-align: right
   padding: 3% 0
   position: absolute
   right: 15%
   top: 0
+  width: 40%
   ul
     display: inline
     padding: 0
@@ -83,6 +85,7 @@ nav
 .sub-problem
   background: $light-grey
   padding: 1%
+  cursor: pointer
   h4
     font-weight: bold
     font-size: $font-size-lead
@@ -95,8 +98,9 @@ nav
   padding: 1%
   background: $light-grey
   width: 28%
-  margin: 5% 2% 5% 0
+  margin: 0% 2% 5% 0
   display: inline-block
+  cursor: pointer
   h4
     font-weight: bold
     font-size: $font-size-lead
@@ -105,6 +109,11 @@ nav
 
 .exercise-section
   display: none
+
+.intro-text
+  -webkit-column-count: 2
+  -moz-column-count: 2
+  column-count: 2
 
 button
   background: $highlight-color-transparent
@@ -121,3 +130,6 @@ footer
   position: relative
   nav
     text-align: left
+
+.blog
+  min-height: 75vh
