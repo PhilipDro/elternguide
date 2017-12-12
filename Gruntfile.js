@@ -62,6 +62,17 @@ module.exports = function(grunt) {
         },
       },
     },
+    'ftp-deploy': {
+      build: {
+        auth: {
+          host: 'p390047.mittwaldserver.info',
+          port: 21,
+          authKey: 'key2'
+        },
+        src: 'target/css',
+        dest: '/templates/frontend/css'
+      }
+    }
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -70,10 +81,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-ftp-deploy');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['clean', 'sass', 'copy', 'concat', //'uglify'
+  grunt.registerTask('default', ['clean', 'sass', 'copy', 'concat', 'ftp-deploy' //'uglify'
   ]);
 };
