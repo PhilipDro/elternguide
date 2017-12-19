@@ -91,8 +91,14 @@ body > nav
     margin-bottom: 0
   p
     margin-top: 0
-  button
-
+  a
+    background-color: $highlight-color
+    color: $font-color-secondary
+    border-radius: $border-radius
+    padding: 2% 6%
+    &:hover
+      background: darken($highlight-color-transparent, 20%)
+      text-decoration: none
 
 .lead
   font-size: $font-size-default * 1.3
@@ -100,7 +106,9 @@ body > nav
 .cake-stage
   p
     margin-top: 8%
-    transform: translateX(30%)
+    margin-left: 50%
+    transform: translateX(-50%)
+    display: inline-block
 
 .problem-category-list
   text-align: center
@@ -114,7 +122,7 @@ body > nav
     border-radius: $border-radius
     cursor: pointer
     &:hover
-      background: darken($highlight-color, 10%)
+      background-color: darken($highlight-color, 10%)
 
 .sub-problem-category
 .highlighted
@@ -133,14 +141,21 @@ body > nav
 
 .exercise
   padding: 1%
+  border-radius: 10px
   background: $light-grey
-  width: 28%
-  margin: 0% 2% 5% 0
-  display: none
+  width: 20%
+  height: 300px
+  margin: 0% 5% 5% 2.5%
   cursor: pointer
+  float: left
+
+
+
+
 
   .taskcat_text
-      opacity: 0
+    visibility: hidden
+    height: 1px
 
   h4
     font-weight: bold
@@ -175,12 +190,19 @@ button
 footer
   background: $background-color-secondary
   height: 200px
-  position: relative
-  nav
-    text-align: left
+  @media (max-width: 570px)
+    height: 500px
 
 .practise-area-list
   list-style-type: none
 
 .blog
   min-height: 50vh
+
+sub-problem-category
+  margin-left: 25%
+  h4
+    margin-left: 0%
+
+
+
